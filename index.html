@@ -16,36 +16,37 @@
     <section id="topbar" class="top__bar">
         <div class="container__1">
             <div class="contact-info">
-                <i class="email__contact"></i><a href="mailto:info@timetime.com">info@timetime.com</a>
-                <i class="phone__contact"></i> +511 984177198
+                <a class="email" href="info@timetime.com">info@timetime.com</a>
             </div>
             <div class="contact-redes">
-                <a href="facebook.com"><img src="./icons/facebook.black.svg" alt=""></a>
-                <a href="instagram.com"><img src="./icons/instagram.black.svg" alt=""></a>
-                <a href="twitter.com"><img src="./icons/github.black.svg" alt=""></a>
+                <a href="facebook.com"><img class="facebook" src="./icons/facebook.white.svg" alt=""></a>
+                <a href="instagram.com"><img class="instagram" src="./icons/instagram.white.svg" alt=""></a>
+                <a href="twitter.com"><img class="twitter" src="./icons/github.white.svg" alt=""></a>
             </div>
         </div>
     </section>
     <!---finTopBar--->
     <!---InicioHeader--->
-    <header id="header" class="header__nav">
-        <div class="container__2">
-            <h1 class="logo"><a href="index.html">Time:Time</a></h1>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#banner">Inicio</a></li>
-                    <li><a class="nav-link scrollto" href="#nosotros">Sobre Nosotros</a></li>
-                    <li><a class="nav-link scrollto" href="#servicios">Servicios</a></li>
-                    <li><a class="nav-link scrollto " href="#simulador">Simulador</a></li>
-                    <li><a class="nav-link scrollto" href="#precios">Paquetes</a></li>
-                    <li><a class="nav-link scrollto" href="#equipo">Equipo</a></li>
-                    <li><a class="nav-link scrollto" href="#contacto">Contacto</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-
-          
-        </div>
-    </header>
+    <header>
+        <section>
+        <a href="https://www.linkedin.com/in/sutharmayur" id="logo" target="_blank">Mayur Suthar</a>
+        
+        <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+        <input type="checkbox" id="toggle-1">
+        
+        <nav>
+        <ul>
+        <li><a href="#logo"><i class="icon-home"></i>Home</a></li>
+        <li><a href="#about"><i class="icon-user"></i>About</a></li>
+        <li><a href="#portfolio"><i class="icon-thumbs-up-alt"></i>Portfolio</a></li>
+        <li><a href="#services"><i class="icon-gear"></i>Services</a></li>
+        <li><a href="#gallery"><i class="icon-picture"></i>Gallery</a></li>
+        <li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+        </ul>
+        </nav>
+        </header>
+        
+        </section>
     <!---FinHeader--->
     <!--InicioBanner-->
     <section id="banner">
@@ -303,6 +304,7 @@
             </div>
     </footer>
     <!--FinContacto-->
+    <script src="./js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
