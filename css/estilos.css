@@ -7,6 +7,17 @@
     list-style:none;
     outline:none; 
 }
+.ir-arriba{
+    display:none;
+    background-repeat:no-repeat;
+    font-size:20px;
+    color:black;
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:2;
+  }
 
 /*---Topbar---*/
 #topbar {
@@ -64,11 +75,25 @@
 .contenedor__nav{
     padding-top: 40px;
     width: 100vw;
+    
 }
 .navegacion {
-    height: 70px;
     background: #272727;
+    display: grid;
+    grid-template-columns: 100vw ;
+    grid-template-rows: 40px ;
+    height: 120px;
   }
+.logo{
+    color: #f3f3f3;
+    text-decoration: none;
+    background-color: #272727;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline #f3f3f3;
+    display: flex; 
+}
   
   nav {
     float: left;
@@ -117,7 +142,6 @@
     left: 80vw;
     background: #272727;
     height: 70px;
-    width: 100%;
   }
   
   @media screen and (max-width: 979px) {
@@ -127,7 +151,7 @@
   
     .nav-menu {
       display: none;
-      margin-top: 55px;
+      margin-top: 10px;
       right: 80vw;
     }
     
@@ -140,6 +164,7 @@
       line-height: 20px;
       display: flex;
       justify-content: flex-end;
+      z-index: 1;
     }
     .nav-menu li ul li a {
         
@@ -152,9 +177,25 @@
   }
   
   @media screen and (min-width: 980px) {
+    .contenedor__nav{
+        padding-top: 40px;
+        width: 100vw;
+       
+    }
+    .logo{
+        color: #f3f3f3;
+        text-decoration: none;
+        background-color: #272727;
+        font-size: 1.8rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: underline #f3f3f3;
+        display: flex;
+        
+    }
    
     .nav-menu {
-      display: block !important;
+      display: block;
+      z-index: 1;
     }  
   }
   
@@ -205,4 +246,145 @@
   #nav-boton.activo span:before {
     transform: rotate(45deg);
   }
+  /*---finLogoNav---*/
+  /*---inicioBanner---*/
+  .container__3{
+      height: 100vh;
+      width: 100vw;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .bienvenidos{
+      font-size: 2.5rem;
+  }
+  #banner{
+    width: 100vw;
+    height: calc(100vh - 110px);
+    background: url("../img/hero-bg.jpg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+
+  #banner:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+  }
+  /*---finBanner---*/
+  /*---inicioNosotros---*/
+  #nosotros{
+      width: 100vw;
+      height: 100vh;
+      padding-top: 50px;
+  }
+  .container__4{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+.img-fluid{
+    width: 80vw;
+    display: flex;
+
+}
+.texto__nosotros{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+}
+  /*---FinNosotros---*/
+  /*---inicioServicio---*/
+  .servicios__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .servicios .icon-box {
+    text-align: center;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
   
+  .servicios .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #cc1616;
+    transition: all .3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+  }
+  
+  .servicios .icon-box .icon i {
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  .servicios .icon-box .icon::before {
+    position: absolute;
+    content: '';
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: #fce5e5;
+    transition: all .3s ease-out 0s;
+    transform: translateZ(-1px);
+  }
+  
+  .servicios .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .servicios .icon-box h4 a {
+    color: #191919;
+  }
+  
+  .servicios .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .servicios .icon-box:hover {
+    background: #cc1616;
+    border-color: #cc1616;
+    padding: 70px 20px 90px 20px;
+  }
+  
+  .servicios .icon-box:hover .icon {
+    background: #fff;
+  }
+  
+  .servicios .icon-box:hover .icon i {
+    color: #cc1616;
+  }
+  
+  .servicios .icon-box:hover .icon::before {
+    background: #e82d2d;
+  }
+  
+  .servicios .icon-box:hover h4 a, .services .icon-box:hover p {
+    color: #fff;
+  }
+  /*---FinServicio---*/
+
+
+
+
