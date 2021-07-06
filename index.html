@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Time:Time</title>
 </head>
 
@@ -80,6 +80,12 @@
             </div>
     </section>
     <!--FinNosotros-->
+    <!--InicioEquipo-->
+    <div class="equipo">
+        <button class="botton" id="boton-equipo">Equipo</button>
+        <div id="lista-equipo"></div>
+    </div>
+    <!--FinEquipo-->
     <!--InicioServicios-->
     <section  id="servicios" class="servicios">
         <div class="container__5">
@@ -116,19 +122,19 @@
     </section>
     <!--FinServicios-->
     <!--InicioDemo-->
-    <section id="simulador" class="cta">
-        <div class="container__6" data-aos="zoom-in">
+    <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
             <article id="botton">
-                <h1 class="bienvenidos">Bienvenidos a PrimaTime Demo</h1>
+                <h1 class="bienvenidos">Bienvenidos a Time : Time Demo</h1>
                 <button id="btn-abrir-popup" class="btn-abrir-popup">ingresar</button>
             </article>
-
             <div class="overlay" id="overlay">
                 <div class="popup" id="popup">
                     <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
 
                     <main id="main-holder">
                         <h2 id="login-header">usuario</h2>
+
                         <div id="login-error-msg-holder">
                             <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or
                                     password</span></p>
@@ -208,12 +214,14 @@
         </div>
     </section>
     <!--FinPaquetes-->
+    <!--botonArriba-->
     <a class="ir-arriba" title="Volver arriba">
         <span class="fa-stack">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
         </span>
       </a>
+    <!--botonArriba-->
     <!--InicioContacto-->
     <footer id="contacto">
         <div class="footer-top">
@@ -247,13 +255,17 @@
             </div>
     </footer>
     <!--FinContacto-->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/ingresarsimulador.js"></script>
+    <script src="./js/equipo.js"></script>
     <script src="./js/arriba.js"></script>
     <script src="./js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
