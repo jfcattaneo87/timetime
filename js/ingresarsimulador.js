@@ -14,7 +14,6 @@ btnCerrarPopup.addEventListener('click', function(e){
 	popup.classList.remove('active');
 });
 
-
 const loginForm = document.getElementById("loginForm");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
@@ -35,3 +34,4 @@ loginButton.addEventListener("click", (e) => {
         loginErrorMsg.style.opacity = 1;
     }
 })
+
