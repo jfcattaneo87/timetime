@@ -153,12 +153,15 @@
   color: white;
 }
 .botones{
-  width: 60vw;
+  width: 100%;
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-evenly;
   border: solid 2px black;
+}
+.marcador{
+  width: 25%;
 }
 .in{
   width: 100px;
@@ -185,6 +188,69 @@
   color: white;
 }
 
+.calendar{
+  background:#cc1616;
+  width: 25%;
+  height: 85%;
+  margin: 40px;
+  
+}
+.calendar__info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.calendar__prev .calendar__next {
+  
+   cursor: pointer;
+   font-size: 1.4em;
+
+}
+.calendar__prev{
+  cursor: pointer;
+  margin-right: auto;
+  color: white;
+  font-size: 1.4em;
+}
+.calendar__next{
+  cursor: pointer;
+  margin-left: auto;
+  color: white;
+  font-size: 1.4em;
+}
+
+.calendar__week{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+
+}
+#dates{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+
+}
+.calendar__today{
+  background: #3009dd;
+  color: white;
+  width: 50%;
+  border-radius:50%;
+  margin: auto;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+}
+
+.calendar__day{
+  text-align: center;
+  line-height: 2;
+}
 
   nav {
     float: left;
