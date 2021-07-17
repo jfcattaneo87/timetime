@@ -123,31 +123,31 @@
         <div class="container" data-aos="zoom-in">
             <article id="botton">
                 <h1 class="bienvenidos__demo">Bienvenidos a Time : Time Demo</h1>
-                <button id="btn-abrir-popup" class="btn-abrir-popup">ingresar</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ingresar
+                </button>
             </article>
-            <div class="overlay" id="overlay">
-                <div class="popup" id="popup">
-                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
 
-                    <main id="main-holder">
-                        <h2 id="login-header">usuario</h2>
-
-                        <div id="login-error-msg-holder">
-                            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or
-                                    password</span></p>
-                        </div>
-                        <form id="loginForm">
-                            <input type="text" name="username" id="username-field" class="login-form-field"
-                                placeholder="Username">
-                            <input type="password" name="password" id="password-field" class="login-form-field"
-                                placeholder="Password">
-                            <input type="submit" value="Login" id="login-form-submit">
-                        </form>
-                    </main>
-                </div>
-            </div>
     </section>
-    <!--FinDemo-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+            <main id="main-holder">
+                <h2 id="login-header">Ingresa tu correo electronico</h2>
+                <form id="loginForm">
+                    <input type="text" name="email" id="username-field" class="login-form-field" placeholder="Correo Electronico">
+                        <p id="login-error-msg">Invalid email</p>
+                    <input type="button" class="btn btn-primary" value="Login" id="login-form-submit"></input>
+                </form>
+            </main>
+            </div>
+        </div>
+        </div>
+    </div>
     <!--InicioPaquetes-->
     <section id="precios" class="pricing">
         <div class="container__7">
@@ -177,7 +177,7 @@
 
                 <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
                     <div class="box featured">
-                        <h3>Freelanacer</h3>
+                        <h3>Freelancer</h3>
                         <h4><sup>$</sup>19<span> / mes</span></h4>
                         <ul>
                             <li>clock In</li>
