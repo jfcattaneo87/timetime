@@ -1,10 +1,12 @@
+//creamos una funcion del reloj
+
 function clock() {
   let date = new Date();
   let hrs = date.getHours();
   let mins = date.getMinutes();
   let secs = date.getSeconds();
   let period = "AM";
-
+// agregamos un condicional para saber si es am o pm
   if (hrs === 0) hrs = 12;
   if (hrs > 12) {
     hrs = hrs - 12;
@@ -17,7 +19,7 @@ function clock() {
 
   let time = `${hrs}:${mins}:${secs} ${period}`;
   setInterval(clock, 1000);
-  document.getElementById("clock").innerText = time;
+  document.getElementById("clock").innerText = time; // funciona para obtener el reloj dentro del html
 }
 clock();
 
