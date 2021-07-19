@@ -42,9 +42,11 @@ const currentTime = () => {
   return time;
 };
 
+//creamos un nuevo tiempo para que este sea usado el suma 
 const newTime = [];
 
-const clockIn = document.getElementById("clockIn");
+const clockIn = document.getElementById("clockIn"); 
+//funcion para obterner el valor de clock in y clock out todo sera enviado al local storage
 clockIn.onclick = () => {
   const t1 = new Date();
   localStorage.setItem("clockIn", currentTime());
@@ -63,14 +65,14 @@ clockOut.onclick = () => {
   document.getElementById("valorClockOut").innerHTML = valorClockOut;
   newTime.push(t2);
 };
-
+//creamos una const y llamos el id suma para seguir con la arrow function y seguir con la variable para mandarlo al local storage
 const buttonTotalTime = document.getElementById("suma");
 buttonTotalTime.onclick = () => {
   localStorage.setItem("tiempoTotal", getTime());
   let tiempoTotal = localStorage.getItem("tiempoTotal", getTime);
   document.getElementById("tiempoTotal").innerHTML = tiempoTotal;
 };
-
+//tenemos en cuenta retirar el pm y am para realizar la suma
 const getTime = () => {
   let t1 = newTime[0];
   let t2 = newTime[1];

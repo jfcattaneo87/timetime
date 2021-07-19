@@ -1,3 +1,4 @@
+//aplicando jquery para crear funciones en el menu
 $( document ).ready(function() {
 
     $('html').click(function() {

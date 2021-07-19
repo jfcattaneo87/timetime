@@ -1,3 +1,4 @@
+//aplicando jquery para crear el boton que sube la web "scroll"
 $(document).ready(function(){ irArriba(); });
 
 function irArriba(){

@@ -1119,6 +1119,31 @@ nav ul li a:not(:only-child):after {
   padding-top: 30px;
 }
 
+@media (max-width: 375px)and (max-width: 719px) {
+  #footer .footer-top .footer-info {
+    margin: -20px 0 30px 0;
+  }
+  #nosotros {
+    width: 100vw;
+    height: 110vh;
+    padding-top: 50px;
+  }
+  .servicios {
+    height: 155vh;
+  }
+}
+
+/* Modal */
+
+.btn-close {
+  float: right;
+}
+
+.btn-primary {
+  background-color: #cc1616 !important;
+  border-color: #cc1616 !important;
+}
+
 @media screen and (max-width: 720px) {
   .nav-movil {
     display: block;
@@ -1146,67 +1171,41 @@ nav ul li a:not(:only-child):after {
   }
   #nosotros {
     width: 100vw;
-    height: 120vh;
+    height: 65vh;
     padding-top: 50px;
   }
   .servicios {
-    height: 155vh;
+    height: 92vh;
   }
 }
 
 @media screen and (min-width: 980px) {
-  .contenedor__nav {
-    padding-top: 40px;
-    width: 100vw;
-    height: 9vh;
-  }
-  .logo {
-    height: 10vh;
-    padding-left: 4vw;
-    color: #f3f3f3;
-    text-decoration: none;
-    background-color: #272727;
-    font-size: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: underline #f3f3f3;
-    display: flex;
-    align-items: center;
-  }
-  .nav-menu {
-    display: block;
-    z-index: 1;
-    padding-right: 4vw;
-  }
+ 
   #nosotros {
     width: 100vw;
-    height: 160vh;
+    height: 125vh;
   }
   .servicios {
-    height: 150vh;
+    height: 125vh;
   }
 }
-
-@media (max-width: 375px)and (max-width: 719px) {
-  #footer .footer-top .footer-info {
-    margin: -20px 0 30px 0;
-  }
+@media screen and (min-width: 1250px) {
+  
   #nosotros {
     width: 100vw;
-    height: 110vh;
-    padding-top: 50px;
+    height: 105vh;
   }
   .servicios {
-    height: 155vh;
+    height: 85vh;
   }
 }
-
-/* Modal */
-
-.btn-close {
-  float: right;
-}
-
-.btn-primary {
-  background-color: #cc1616 !important;
-  border-color: #cc1616 !important;
+@media screen and (min-width: 1850px) {
+  
+  #nosotros {
+    width: 100vw;
+    height: 140vh;
+  }
+  .servicios {
+    height: 85vh;
+  }
 }
