@@ -17,7 +17,7 @@
   cursor: pointer;
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: 20px;
   z-index: 2;
   text-decoration: none;
 }
@@ -148,26 +148,34 @@
   align-items: center;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-decoration: underline #f3f3f3;
+  color: white;
+  text-decoration: white;
+  
+
 }
 
+/*inicio de reloj*/
 .container__clock {
-  width: auto;
-  height: 50vh;
+  height: 80vh;
   display: grid;
-  grid-template-columns: 40% 200%;
-  grid-template-rows: 30% 100%;
+  grid-template-columns: 50vw 50vw;
+  background-color: rgb(187, 187, 187);
 }
 
 .reloj {
+
   display: flex;
-  align-content: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+
+  
 }
 
 #clock {
-  width: 60%;
-  height: 76%;
+  width: 30%;
+  height: 20%;
   margin: 10px;
   border-radius: 10px;
   border: unset;
@@ -181,15 +189,12 @@
 }
 
 .botones {
-  width: 100%;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
+  width: 50%;
+
 }
 
 .marcador {
-  width: 25%;
+  width: 50vw;
 }
 
 .in {
@@ -211,11 +216,21 @@
 }
 .marcador{
   width: 30%;
+  height: 30%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+
+}
+#suma{
+  width: 100%;
+  height: 25%;
+  color: rgb(245, 245, 245);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background: #4d4d4d;
 
 }
 
@@ -276,12 +291,14 @@
   /* transform: scale(1.25); */
 }
 .light{
-  width: 30%;
-  height: 60vh;
+  width: 50vw;
+  height: 80vh;
   display: flex;
   align-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
 .light .calendar {
   
@@ -699,24 +716,8 @@ nav ul li a:not(:only-child):after {
   justify-content: center;
   text-align: center;
   padding-top: 25px;
-  background-color: rgb(148, 148, 148);
+  background-color: rgb(0, 0, 0);
   color: white;
-}
-
-.equipo {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.botton {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
-  width: 150px;
-  height: 40px;
-  font-size: 1rem;
-  border-radius: 4px;
 }
 
 /*---FinNosotros---*/
@@ -875,125 +876,7 @@ nav ul li a:not(:only-child):after {
 
 /*---FinDemo---*/
 
-/*---InicioPrecios---*/
 
-.pricing .box {
-  padding: 20px;
-  background: #f9f9f9;
-  text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-}
-
-.section-title {
-  text-align: center;
-}
-
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #191919;
-}
-
-.pricing .box h4 {
-  font-size: 42px;
-  color: #cc1616;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing .box ul {
-  padding: 0;
-  list-style: none;
-  color: #191919;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #cc1616;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .box .btn-buy {
-  background: #cc1616;
-  display: inline-block;
-  padding: 10px 40px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .box .btn-buy:hover {
-  background: #e82d2d;
-}
-
-.pricing .featured {
-  background: #cc1616;
-  box-shadow: none;
-  color: #fff;
-}
-
-.pricing .featured h3, .pricing .featured h4, .pricing .featured ul, .pricing .featured ul li, .pricing .featured ul .na {
-  color: #fff;
-}
-
-.pricing .featured h4 span {
-  color: rgba(255, 255, 255, 0.58);
-}
-
-.pricing .featured .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .featured .btn-buy {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.pricing .featured .btn-buy:hover {
-  background: #fff;
-  color: #cc1616;
-}
-
-/*---FinPrecios---*/
 
 /*---InicioContacto---*/
 
@@ -1009,7 +892,7 @@ nav ul li a:not(:only-child):after {
 }
 
 #contacto .footer-top .footer-info {
-  width: 100vw;
+  width: 98vw;
   margin-bottom: 15px;
   background: #191919;
   color: #fff;
@@ -1179,33 +1062,33 @@ nav ul li a:not(:only-child):after {
   }
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (max-width: 980px) {
  
   #nosotros {
     width: 100vw;
-    height: 125vh;
+    height: 140vh;
   }
   .servicios {
     height: 125vh;
   }
 }
-@media screen and (min-width: 1250px) {
+@media screen and (max-width: 1250px) {
   
   #nosotros {
     width: 100vw;
     height: 105vh;
   }
   .servicios {
-    height: 85vh;
+    height: 128vh;
   }
 }
-@media screen and (min-width: 1850px) {
+@media screen and (max-width: 1850px) {
   
   #nosotros {
     width: 100vw;
-    height: 140vh;
+    height: 160vh;
   }
   .servicios {
-    height: 85vh;
+    height: 128vh;
   }
 }
